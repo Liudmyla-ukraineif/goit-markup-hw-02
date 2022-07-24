@@ -1,0 +1,94 @@
+/*цвет палитры
+
+ --текст лого Raleway
+ --текст основной Roboto
+
+ --цвет основного текста #757575
+ -- цвет навигации заголовка #212121
+ -- цвет акцента синий #2196F3
+ -белый #FFFFFF;
+ -- цвет ссылок в футере rgba(255, 255, 255, 0.6)
+
+-- цвет фона #E5E5E5 
+-- цвет фона вторичный #F5F4FA
+-- цвет фона футера #2F303A */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text: #2196F3;
+    --futer-text-color:rgba(255, 255, 255, 0.6);
+    --white-text: #ffffff;
+    --logo-primary-text: #000000;
+}
+
+body {
+    background-color: #ffffff;
+    color:var(--primary-text-color);
+    font-family:Roboto;
+}
+
+.list {
+    list-style: none;
+}
+
+/*логотип*/
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.2;
+    color: var(--logo-primary-text);
+}
+.logo-blue {
+    color: var(--accent-text);
+}
+
+/*навигация сайта*/
+.site-nav .link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-text);
+}
+.site-nav .link.corrent{
+    color: var(--accent-text);
+}
+
+.auth-nav {
+    color: var(--title-text-color);
+    background-color: var(--white-text);
+}
+.auth-nav:hover,
+.auth-nav:active {
+    color: var(--accent-text)
+}
+
+/*hero*/
+.hero-title {
+    color: var(--white-text);
+}
+
+/*section*/
+.section-title {
+    color: var(--title-text-color);
+}
+
+
+
+/*Button*/
+.button {
+    color: var(--white-text);
+    background-color: var(--accent-text);
+}
+.button.primary {
+    color: var(--white-text);
+    background-color: var(--accent-text);
+}
