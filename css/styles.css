@@ -201,9 +201,9 @@ body {
 }
 
 .address-footer:hover,
-.address-footer:active,
+.address-footer:focus,
 .address-item:hover,
-.address-item:active {
+.address-item:focus {
     color: var(--accent-text);
 }
 
